@@ -1,0 +1,39 @@
+#Match-Case(Basic)
+#1)Take a day number (1-7) and print the corresponding weekday:
+D= int(input("Enter a day number:"))
+match D:
+    case 1:
+        print("Monday")
+    case 2:
+        print("Tuesday")
+    case 3:
+        print("Wednesday")
+    case 4:
+        print("Thursday")
+    case 5:
+        print("Friday")
+    case 6:
+        print("Saturday")
+    case 7:
+        print("Sunday")
+    case _:
+        print("Invalid day number")      
+
+
+2)#Create a basic calculator using match-case:
+N1 = int(input("Enter first number: "))
+N2 = int(input("Enter second number: "))
+m= input("Enter operation (+, -, *, /): ")  
+match m:
+    case "+":
+        print("addition:",N1+N2)
+    case "-":
+        print("Substraction:",N1-N2)
+    case "*":
+        print("Multiplication:",N1 * N2)
+    case "/":
+       print("division:",N1/N2)
+    case _:
+        print("Invalid operation") 
+
+
