@@ -37,3 +37,144 @@ match m:
         print("Invalid operation") 
 
 
+
+3)Print a color name based on the first letter entered.
+
+l=input("Enter the first letter of a color: ")
+match l:
+    case 'r':
+        print("Red")
+    case 'B':
+        print("Black")
+    case 'g':
+        print("Green")
+    case 'b':
+        print("Blue")
+    case 'y':
+        print("Yellow")
+    case 'p':
+        print("Purple")
+    case 'o':
+        print("Orange")
+    case _:
+        print("Null Color")
+
+
+
+
+4) Implement a traffic light system using match-case.
+
+traffic=input("enter the color")
+match traffic:
+    case 'red':
+        print("stop")
+    case 'yellow':
+        print("Slow Down/Get Ready")
+    case 'green':
+        print("Go")
+    case _:
+        print("Show an Error Message")
+
+
+5)# Take a country name and print its capital:
+
+country_name = input("Enter a country name: ")
+match country_name:
+    case "USA":
+        print("Washington, D.C")
+    case "India":
+        print("New Delhi")
+    case "France":
+        print("paris")
+    case "Germany":
+        print("Berlin")
+    case "Japan":
+        print("Tokyo")
+    case "Australia":
+        print("Canberra")
+    case "Brazil":
+        print("Brasília")
+    case "Canada":
+        print("Ottawa")
+    case "UK":
+        print("London")
+    case _:
+        print("Capital not found")
+
+
+6)# Create a simple chatbot that responds to greetings:
+chatbot=input("Enter the response:")
+match chatbot:
+    case 'hello'|'hi':
+        print("Hello! How can I help you?")
+    case 'hey':
+        print("Hey there! what's up?")
+    case 'good morning':
+        print("Good Morning! have a great day!")
+    case 'good evening':
+        print("Good Evening! how was your day?")
+    case 'bye'|'goodbye':
+        print("Goodbye! have a great day!")
+    case _:
+        print("I'm not sure how to respond. Can you Rephrase?")
+
+
+
+# Advanced
+7)# Match-Case(Advansed)
+n=input("enter the category")
+match n:
+    case "electronics":
+        print("Available Products:laptop,smartphone")
+        n1=input("select the product:")
+        match n1:
+            case  "Laptop":
+                print("$800")
+            case "smartphone":
+                print("$500")
+    case "clothing":
+        print("Available Products:T-shirt,jeans")
+        n1=input("select the product:")
+        match n1:
+            case "T-shirt":
+                print("$20")
+            case "Jeans":
+                print("$40")
+    case "groceries":
+        print("Available Products:rice,milk")
+        n1=input("select the product:")
+        match n1:
+            case "rice":
+                print("$5")
+            case "milk":
+                print("$2")
+    case _:
+        print("print invalid product")
+
+
+
+8)# Implement a basic ATM system with balance check, deposit, and withdrawal options
+s=int(input("enter the amount:"))
+s1=input()
+match s1:
+    case "balance check":
+        print("balance is checked")
+    case "deposite":
+        c=int(input("enter the amount:"))
+        s=s+c
+        print("deposited amount:",s)
+    case "withdrawal":
+        c=int(input("enter the amount:"))
+        s=s-c
+        print("withdrawal amount:",s)
+
+
+
+
+
+
+
+
+
+
+
